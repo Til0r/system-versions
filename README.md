@@ -1,4 +1,4 @@
-# 📦 System Versions Explorer
+# <img src="./resources/icon.png" width="50"> System Versions Explorer
 
 ![VS Code Extension](https://img.shields.io/visual-studio-marketplace/v/til0r.system-versions?label=VSCode%20Marketplace)
 ![Downloads](https://img.shields.io/visual-studio-marketplace/d/til0r.system-versions?color=blue&label=Downloads)
