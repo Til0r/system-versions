@@ -36,6 +36,15 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
+    "viewsContainers": {
+      "panel": [
+        {
+          "id": "systemVersionsView",
+          "title": "System Versions",
+          "icon": "resources/icon.svg"
+        }
+      ]
+    },
     "commands": [
       {
         "command": "syv.refresh",
