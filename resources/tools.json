@@ -1,0 +1,138 @@
+[
+    {
+        "name": "Node.js",
+        "command": "node --version"
+    },
+    {
+        "name": "npm",
+        "command": "npm --version"
+    },
+    {
+        "name": "Python",
+        "command": "python --version"
+    },
+    {
+        "name": "Python3",
+        "command": "python3 --version"
+    },
+    {
+        "name": "Java",
+        "command": "java --version"
+    },
+    {
+        "name": "Java (jenv)",
+        "command": "jenv global"
+    },
+    {
+        "name": "Git",
+        "command": "git --version"
+    },
+    {
+        "name": "Angular CLI",
+        "command": "ng --version"
+    },
+    {
+        "name": "TypeScript",
+        "command": "tsc --version"
+    },
+    {
+        "name": "Docker",
+        "command": "docker --version"
+    },
+    {
+        "name": "yarn",
+        "command": "yarn --version"
+    },
+    {
+        "name": "pip",
+        "command": "pip --version"
+    },
+    {
+        "name": "pip3",
+        "command": "pip3 --version"
+    },
+    {
+        "name": "Maven",
+        "command": "mvn --version"
+    },
+    {
+        "name": "Gradle",
+        "command": "gradle --version"
+    },
+    {
+        "name": "Go",
+        "command": "go version"
+    },
+    {
+        "name": "Rust",
+        "command": "rustc --version"
+    },
+    {
+        "name": "PHP",
+        "command": "php --version"
+    },
+    {
+        "name": "Ruby",
+        "command": "ruby --version"
+    },
+    {
+        "name": "React (via npx)",
+        "command": "npx create-react-app --version"
+    },
+    {
+        "name": "Vue CLI",
+        "command": "vue --version"
+    },
+    {
+        "name": "Vite",
+        "command": "vite --version"
+    },
+    {
+        "name": "Next.js",
+        "command": "next --version"
+    },
+    {
+        "name": "Nuxt",
+        "command": "nuxt --version"
+    },
+    {
+        "name": "Svelte",
+        "command": "svelte --version"
+    },
+    {
+        "name": "React Native CLI",
+        "command": "react-native --version"
+    },
+    {
+        "name": "Flutter",
+        "command": "flutter --version"
+    },
+    {
+        "name": "Ionic CLI",
+        "command": "ionic --version"
+    },
+    {
+        "name": "Cordova",
+        "command": "cordova --version"
+    },
+    {
+        "name": "pnpm",
+        "command": "pnpm --version"
+    },
+    {
+        "name": "nvm",
+        "command": "nvm current"
+    },
+    {
+        "name": "pyenv",
+        "command": "pyenv --version"
+    },
+    {
+        "name": "rbenv",
+        "command": "rbenv --version"
+    },
+    {
+        "name": "jenv",
+        "command": "jenv --version"
+    }
+]
