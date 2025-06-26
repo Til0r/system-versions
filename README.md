@@ -65,7 +65,7 @@ Want support for more tools? [Open an issue](https://github.com/til0r/system-ver
 
 ## 📸 Preview
 
-![System Versions Sidebar Preview](./resources/system-versions-preview.png)
+![System Versions Sidebar Preview](./resources/readme/system-versions-preview.png)
 
 ---
 
