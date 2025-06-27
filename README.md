@@ -53,7 +53,6 @@ A simple and handy **Visual Studio Code extension** that shows versions of popul
 | Ionic CLI | `ionic --version` |
 | Cordova | `cordova --version` |
 | pnpm | `pnpm --version` |
-| nvm | `nvm current` |
 | pyenv | `pyenv --version` |
 | rbenv | `rbenv --version` |
 | jenv | `jenv --version` |

@@ -120,10 +120,6 @@
         "command": "pnpm --version"
     },
     {
-        "name": "nvm",
-        "command": "nvm current"
-    },
-    {
         "name": "pyenv",
         "command": "pyenv --version"
     },
