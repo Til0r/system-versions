@@ -1,4 +1,5 @@
 import { exec } from 'child_process';
+import * as os from 'os';
 import * as vscode from 'vscode';
 import { tools } from '../src/tools.constant';
 
@@ -25,6 +26,14 @@ export function activate(context: vscode.ExtensionContext) {
 
 export function deactivate() {}
 
+function preferredShell(): string | undefined {
+  if (os.platform() === 'win32') {
+    return 'cmd.exe';
+  }
+
+  return undefined;
+}
+
 class ToolVersionProvider implements vscode.TreeDataProvider<ToolItem> {
   private _onDidChangeTreeData: vscode.EventEmitter<
     ToolItem | undefined | void
@@ -40,23 +49,27 @@ class ToolVersionProvider implements vscode.TreeDataProvider<ToolItem> {
     this._onDidChangeTreeData.fire();
     const versionPromises = (tools as Tool[]).map(tool => {
       return new Promise<ToolItem | null>(resolve => {
-        exec(tool.command, (error, stdout, stderr) => {
-          let output = (stdout || stderr || '').trim();
+        exec(
+          tool.command,
+          { shell: preferredShell() },
+          (error, stdout, stderr) => {
+            let output = (stdout || stderr || '').trim();
 
-          if (this.isCommandNotFound(output) || error) {
-            resolve(null);
-            return;
-          }
+            if (this.isCommandNotFound(output) || error) {
+              resolve(null);
+              return;
+            }
 
-          if (tool.parseVersion) {
-            output = tool.parseVersion(output);
-          } else {
             output = this.cleanOutput(output);
-          }
 
-          const label = `${tool.name}: ${output}`;
-          resolve(new ToolItem(label));
-        });
+            if (tool.parseVersion) {
+              output = tool.parseVersion(output);
+            }
+
+            const label = `${tool.name}: ${output}`;
+            resolve(new ToolItem(label));
+          }
+        );
       });
     });
 
